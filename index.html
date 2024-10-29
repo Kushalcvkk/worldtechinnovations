@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>World Tech Innovations</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+			<img src="images/logo1.jfif" height="80px" width="120px" style="border-radius: 20px;">
+	      <a class="navbar-brand" href="index.html">World Tech Innovations</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About us</span></a></li>
+	          <li class="nav-item"><a href="#Mentorship-section" class="nav-link"><span>Mentorship</span></a></li>
+	          <li class="nav-item"><a href="#research-and-development-section" class="nav-link"><span>R&D</span></a></li>
+	          <li class="nav-item"><a href="#WebServices-section" class="nav-link"><span>Web Services</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+				<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/img2.jpeg); width:550px ; height:100px ;border-radius: 100px;margin-top: 70px;">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">We're<span>World Tech Innovations</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Your Startup\'s Success, Our Mission',' – Let’s Build It Together! '
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 50); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 50);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/yaswanth-yadav-821b0130b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="btn btn-primary py-3 px-4">LinkedIn</a> </p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+		<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+										<div class="about-img">
+											<img src="images\main-img.webp" class="img-fluid rounded b-shadow-a" alt="Agency Image">
+										</div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+										<div class="about-info">
+											<p><span class="title-s"><b>Agency Name:</b> </span> <span>World Tech Innovations</span></p>
+											<p><span class="title-s"><b>Mission:</b> </span> <span>Empowering startups through mentorship and cutting-edge solutions</span></p>
+											<p><span class="title-s"><b>Experience:</b> </span> <span>1 year supporting startup growth</span></p>
+										</div>
+									</div>
+								</div>
+	
+								<div class="skill-mf">
+									<p class="title-s">Expertise At</p>
+									<span>Mentorship</span> <span class="pull-right">100%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									
+									<span>Research & Development</span> <span class="pull-right">100%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									
+									<span>Web Development</span> <span class="pull-right">100%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									
+									<span>App Development</span> <span class="pull-right">100%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									
+									<span>Digital Marketing</span> <span class="pull-right">100%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+	
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">Who We Are</h2>
+								
+								<p>At World Tech Innovations, we believe in turning innovative ideas into reality. With a passion for helping startups succeed, we offer free mentorship, in-depth research and development on your startup ideas, and top-tier web services such as web and app development, and digital marketing. Our team is dedicated to providing the resources and guidance you need to thrive in the competitive business world.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Services:</span> <span>Mentorship, Web &amp; App Development, Digital Marketing, R&D</span></li>
+								</ul>
+							</div>
+						</div>
+	
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="8">0</span> <span>+</span>
+									<span>&nbsp; Startups Empowered</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/yaswanth-yadav-821b0130b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="btn btn-primary py-3 px-3">Connect on LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="Mentorship-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<!-- Added image here -->
+					<img src="images/mentorship.webp" alt="Mentorship Program Image" class="img-fluid mb-4" height="400px" width="550px">
+					<h1 class="big big-2">Mentorship</h1>
+					<h2 class="mb-4">Our Mentorship Program</h2>
+					<p>At StartupHub Solutions, we offer comprehensive mentorship programs for aspiring entrepreneurs, helping them navigate through the challenges of launching a startup. Our experienced mentors provide valuable guidance on everything from idea validation to growth strategies.</p>
+				</div>
+			</div>
+	
+			<div class="row">
+				<h1 class="big-4">Program Structure</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+	
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Personalized Guidance</span>
+						<h2>Tailored Mentorship</h2>
+						<p class="mt-4">Our mentorship program is designed to provide customized guidance based on the unique needs of each startup. Whether you're in the ideation stage or scaling your operations, we offer one-on-one sessions tailored to help you achieve your business goals.</p>
+					</div>
+				</div>
+	
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Flexible Scheduling</span>
+						<h2>Adaptable to Your Needs</h2>
+						<p class="mt-4">We understand that entrepreneurs have busy schedules. Our program offers flexible mentorship sessions, ensuring that you receive valuable guidance without disrupting your workflow. Schedule sessions at your convenience and get real-time feedback as your startup progresses.</p>
+					</div>
+				</div>
+			</div>
+	
+			<br>
+			<br>
+	
+			<div class="row">
+				<h1 class="big-4">Focus Areas</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+	
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Startup Fundamentals</span>
+						<h2>Building a Strong Foundation</h2>
+						<p class="mt-4">We guide you through the essentials of establishing a startup, including legal frameworks, funding options, and team building. Our mentors help you develop a solid foundation that will support your startup’s growth and scalability.</p>
+					</div>
+				</div>
+	
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Market Strategies</span>
+						<h2>Positioning & Growth</h2>
+						<p class="mt-4">Gain insights into market positioning, customer acquisition, and retention strategies. Our mentors assist you in crafting effective marketing campaigns and growth hacking strategies to maximize your reach and impact in the market.</p>
+					</div>
+				</div>
+			</div>
+	
+			<br>
+			<br>
+	
+			<div class="row">
+				<h1 class="big-4">Benefits of Joining</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+	
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Network & Resources</span>
+						<h2>Access to Industry Connections</h2>
+						<p class="mt-4">By joining our mentorship program, you gain access to a wide network of industry experts, investors, and potential partners. This invaluable support network provides essential resources and opportunities to accelerate your startup’s success.</p>
+					</div>
+				</div>
+	
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Continuous Support</span>
+						<h2>Long-term Mentorship</h2>
+						<p class="mt-4">Our mentors provide ongoing support even after the program ends, ensuring you have a reliable source of guidance as your startup grows. Stay connected with experienced mentors who are invested in your long-term success.</p>
+					</div>
+				</div>
+			</div>
+	
+			<div class="row justify-content-center mt-5">
+				<div class="col-md-6 text-center ftco-animate">
+					<p><a href="https://forms.gle/aitv83r6JkroLQR66" class="btn btn-primary py-4 px-5">Join our Mentorship Program</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+    <section class="ftco-section" id="research-and-development-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<img src="images\r_and_d.webp" alt="R&D Program Image" class="img-fluid mb-4" height="400px" width="750px">
+					<h1 class="big big-2">Research & Development</h1>
+					<h2 class="mb-4">Innovation for Startups</h2>
+					<p>We believe innovation is the key to success for startups. At StartupHub Solutions, we offer specialized Research & Development (R&D) services to help startups ideate, develop, and implement cutting-edge solutions that stand out in the market.</p>
+				</div>
+			</div>
+	
+			<div class="row">
+				<h1 class="big-4">Research and Development</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+	
+			<div class="row">
+				<!-- Research and Market Analysis -->
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Market & Trend Analysis</span>
+						<h2>Data-Driven Insights</h2>
+						<p class="mt-4">Our R&D team conducts in-depth market and trend analysis to identify key opportunities for startups. We help you understand the competitive landscape and make data-driven decisions for better product development.
+							<ul>
+								<li>Conducted over 200 market research reports for various industries.</li>
+								<li>Expertise in identifying emerging trends that help startups gain a competitive edge.</li>
+								<li>Utilize advanced data analytics tools for precise market forecasts and strategic decision-making.</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+	
+				<!-- Product Development -->
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Product Innovation</span>
+						<h2>Prototype to Market-Ready</h2>
+						<p class="mt-4">From ideation to product launch, our R&D team supports startups at every stage of product development. We help you transform your ideas into fully functional prototypes and guide you through the testing and refinement process.
+							<ul>
+								<li>Developed 50+ prototypes that have successfully been launched in the market.</li>
+								<li>Collaborate with industry experts to optimize product designs and functionalities.</li>
+								<li>Provide guidance on manufacturing, distribution, and product-market fit testing.</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+	
+			<br>
+			<br>
+	
+			<div class="row">
+				<h1 class="big-4">Our R&D Process</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+	
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Idea Validation</span>
+						<h2>Research-Backed Validation</h2>
+						<p class="mt-4">We help startups validate their ideas using comprehensive research methods, including surveys, market tests, and user feedback. Our goal is to ensure that your idea has real potential before significant investments are made.</p>
+					</div>
+				</div>
+	
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Innovation Workshops</span>
+						<h2>Interactive R&D Sessions</h2>
+						<p class="mt-4">We organize hands-on workshops and brainstorming sessions to encourage creativity and innovation. Our team of experts helps startups explore new opportunities, refine ideas, and develop actionable strategies for R&D success.</p>
+					</div>
+				</div>
+			</div>
+	
+			<br>
+			<br>
+	
+			<div class="row justify-content-center mt-5">
+				<div class="col-md-6 text-center ftco-animate">
+					<p><a href="https://forms.gle/aitv83r6JkroLQR66" class="btn btn-primary py-4 px-5">Explore R&D Services</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="ftco-section ftco-no-pb" id="WebServices-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Web Services</h1>
+					<h2 class="mb-4">Digital Solutions</h2>
+					<p>We offer a wide range of web services, including Web Development, App Development, and Digital Marketing. Our expertise helps startups build a solid digital presence, ensuring growth and scalability in a competitive market.</p>
+				</div>
+			</div>
+	
+			<div class="row">
+				<h1 class="big-4">Our Services</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+	
+			<div class="row">
+				<!-- Web Development -->
+				<div class="col-md-4">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Web Development</span>
+						<h2>Custom Websites & Platforms</h2>
+						<p class="mt-4">We specialize in developing custom websites, e-commerce platforms, and web applications that align with your business goals. Our developers are skilled in modern technologies to build fast, scalable, and responsive websites.
+							<ul>
+								<li>Responsive and user-friendly websites</li>
+								<li>Custom e-commerce and CMS platforms</li>
+								<li>Front-end & back-end development</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+	
+				<!-- App Development -->
+				<div class="col-md-4">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">App Development</span>
+						<h2>Mobile & Web Apps</h2>
+						<p class="mt-4">Our app development services focus on creating high-performance mobile and web apps. Whether it’s iOS, Android, or cross-platform apps, we build solutions that offer seamless user experiences.
+							<ul>
+								<li>iOS and Android app development</li>
+								<li>Cross-platform solutions (React Native, Flutter)</li>
+								<li>Custom mobile solutions for various industries</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+	
+				<!-- Digital Marketing -->
+				<div class="col-md-4">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Digital Marketing</span>
+						<h2>SEO & Online Branding</h2>
+						<p class="mt-4">Our digital marketing services help startups enhance their online presence through SEO, social media marketing, and paid campaigns. We create customized marketing strategies that drive traffic and improve conversion rates.
+							<ul>
+								<li>SEO & SEM services</li>
+								<li>Social media marketing (Facebook, Instagram, LinkedIn)</li>
+								<li>Pay-per-click advertising and content marketing</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+	
+			<br>
+			<br>
+	
+			<div class="row">
+				<h1 class="big-4">Why Choose Us?</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+	
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">End-to-End Solutions</span>
+						<h2>Comprehensive Digital Services</h2>
+						<p class="mt-4">From idea to execution, we provide end-to-end solutions for startups, ensuring that your digital journey is smooth and efficient. Our holistic approach to development and marketing ensures that all aspects of your business are covered.</p>
+					</div>
+				</div>
+	
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Customer-Centric Approach</span>
+						<h2>Tailored to Your Needs</h2>
+						<p class="mt-4">We work closely with startups to understand their unique needs and goals. Our solutions are customized to align with your brand, ensuring that your digital presence resonates with your target audience.</p>
+					</div>
+				</div>
+			</div>
+	
+			<br>
+			<br>
+	
+			<div class="row justify-content-center mt-5">
+				<div class="col-md-6 text-center ftco-animate">
+					<p><a href="https://forms.gle/aitv83r6JkroLQR66" class="btn btn-primary py-4 px-5">Explore Our Web Services</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="2">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="5">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="10">0</strong>
+                <span>Mentored Startups</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+		<div class="row justify-content-center">
+			<div class="col-md-7 ftco-animate text-center">
+				<div class="heading">
+					<h4>We love tackling startup challenges &amp; building innovative digital solutions</h4>
+					<br>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact us</h2>
+            <p>Below are the details to reach out to us!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <!-- <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Bengaluru, India</p>
+	          </div>
+          </div> -->
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate" style="margin-left: 18rem;">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+ 91 6301338677</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">worldtechinnovations786@gmail.com</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/ojhq92Cgnvko2WV78" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/yaswanth-yadav-821b0130b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://twitter.com/"><span class="icon-twitter"></span></a></li>
+					  <li class="ftco-animate"><a href=""><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/worldtech_innovations?utm_source=qr&igsh=ajR1Mm5qMnQwNmd2"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
